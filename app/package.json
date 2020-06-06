@@ -1,0 +1,16 @@
+{
+  "name": "monorepo-test-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "rollup": "^2.3.4"
+  },
+  "dependencies": {
+    "@monorepo-test/bar": "file:../packages/bar",
+    "@monorepo-test/foo": "file:../packages/foo"
+  }
+}
