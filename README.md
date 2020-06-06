@@ -14,7 +14,7 @@ App has both packages `foo` and `bar` installed as dependencies. `bar` has zero 
 
 App will not succesfully compile with Rollup, even though both packages are installed in `node_modules`.
 
-Output:
+### Output
 
 ```
 ❯ npm run build
@@ -33,13 +33,11 @@ Use output.globals to specify browser global variable names corresponding to ext
 created dist/bundle.js in 32ms
 ```
 
-**Why?**
-
 ### How to run
 
 ```
-git clone ...
-cd repo/app
+git clone git@github.com:arggh/rollup-peerdeps-issue.git peerdeps-issue
+cd peerdeps-issue/app
 npm install
 npm run build
 ```
